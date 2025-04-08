@@ -26,6 +26,8 @@
     <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
     <Folder Include="MiddleWare\" />
+    <Folder Include="NewFolder\" />
+    <Folder Include="wwwroot\images\products\" />
   </ItemGroup>
 
 </Project>
