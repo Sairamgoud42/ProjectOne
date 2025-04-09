@@ -7,13 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Helpers\CachedAttribute.cs" />
+    <Compile Remove="Helpers\MappingProfiles.cs" />
+    <Compile Remove="Helpers\OrderItemUrlResolver.cs" />
+    <Compile Remove="Helpers\Pagination.cs" />
+    <Compile Remove="Helpers\ProductUrlResolver.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.14" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,10 +31,7 @@
 
   <ItemGroup>
     <Folder Include="Dtos\" />
-    <Folder Include="Errors\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
-    <Folder Include="MiddleWare\" />
     <Folder Include="NewFolder\" />
     <Folder Include="wwwroot\images\products\" />
   </ItemGroup>
